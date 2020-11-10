@@ -1,6 +1,6 @@
 #include "PHASEOUT.h"
 
-int phase_equals(char* string, char* search, char end)
+int phase_equals(char *string, char *search, char end)
 {
     int string_length = phase_length(string, end);
     int search_length = phase_length(search, end);

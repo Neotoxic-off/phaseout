@@ -60,16 +60,16 @@ char* test_set()
 int main(void)
 {
     // EQUAL
-    phase_putstr(test_is_equal(), '\0');
-    phase_putstr(test_is_not_equal(), '\0');
-    phase_putstr(test_wrong_string_equal(), '\0');
+    phase_writeline(test_is_equal(), '\0');
+    phase_writeline(test_is_not_equal(), '\0');
+    phase_writeline(test_wrong_string_equal(), '\0');
 
     // APPEND
-    phase_putstr(test_string_append(), '\0');
-    phase_putstr(test_char_append(), '\0');
+    phase_writeline(test_string_append(), '\0');
+    phase_writeline(test_char_append(), '\0');
 
     // SET
-    phase_putstr(test_set(), '\0');
+    phase_writeline(test_set(), '\0');
     
     return (0);
 }
