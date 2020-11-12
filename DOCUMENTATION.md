@@ -2,12 +2,6 @@
     <img alt = "logo" width="500" height="100" src = "https://raw.githubusercontent.com/Neotoxic-off/phaseout/main/img/logo.png"/>
 </p>
 
-<div align="center">
-    <img src="https://img.shields.io/badge/Version-0.0.1-purple?style=for-the-badge">
-    <img src="https://img.shields.io/badge/Status-in%20development-green?style=for-the-badge">
-    <img src="https://img.shields.io/badge/Documentation-in%20development-green?style=for-the-badge">
-<div/>
-
 *Let's make the C even better*
 
 ---
