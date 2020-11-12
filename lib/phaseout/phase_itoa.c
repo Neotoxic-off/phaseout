@@ -9,5 +9,6 @@ char *phase_itoa(int number, char c)
         str[len] = number % 10  + '0';
         number = number / 10;
     }
+
     return (str);
 }

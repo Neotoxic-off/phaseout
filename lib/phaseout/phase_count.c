@@ -7,5 +7,6 @@ int phase_count(char *str, char c, char end)
     for (int i = 0; str[i] != end; i++)
         if (str[i] == c)
             count++;
+
     return (count);
 }

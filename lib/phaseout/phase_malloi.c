@@ -8,6 +8,6 @@ int *phase_malloi(int size, int c)
         for (int i = 0; i <= size; i++)
             target[i] = c;
         return (target);
-    }else
+    } else
         return (NULL);
 }

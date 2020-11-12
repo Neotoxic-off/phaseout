@@ -6,5 +6,6 @@ int phase_nlength(int num)
 
     for (; num > 0; i++)
         num = num / 10;
+
     return (i);
 }

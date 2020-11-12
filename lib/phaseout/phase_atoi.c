@@ -8,5 +8,6 @@ int phase_atoi(char *str, char c)
 
     for (; size >= 0; size--, i = i * 10)
         number = number + ((str[size] - 48) * i);
+
     return (number);
 }

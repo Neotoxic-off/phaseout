@@ -2,6 +2,10 @@
 Let's make the C even better
 
 ```H
+#include <stddef.h>
+#include <stdlib.h>
+#include <unistd.h>
+
 // DISPLAY
 int phase_writenbr(int);
 int phase_writechar(char);
@@ -12,7 +16,7 @@ int phase_equals(char *, char *, char);
 int phase_prime(int);
 
 // MANIPULATION
-char* phase_set(char *, char);
+char *phase_set(char *, char);
 char *phase_append(char *, char*, char);
 char *phase_reverse(char *, char);
 
@@ -33,4 +37,5 @@ int phase_ffree(char **, char *);
 // CONVERT
 int phase_atoi(char *, char);
 char *phase_itoa(int, char);
+
 ```

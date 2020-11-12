@@ -1,6 +1,6 @@
 #include "PHASEOUT.h"
 
-int phase_writenbr(int nb)
+int phase_writenum(int nb)
 {
     int mod = 0;
 
@@ -12,7 +12,7 @@ int phase_writenbr(int nb)
         if (nb >= 10) {
             mod = (nb % 10);
             nb = (nb - mod) / 10;
-            phase_writenbr(nb);
+            phase_writenum(nb);
             phase_writechar(48 + mod);
         } else
             phase_writechar(48 + nb % 10);

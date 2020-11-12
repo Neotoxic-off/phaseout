@@ -10,5 +10,6 @@ char *phase_reverse(char *str, char end)
         str[i] = str[size - 1 - i];
         str[size - 1 - i] = temp;
     }
+
     return (str);
 }

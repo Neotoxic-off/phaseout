@@ -7,5 +7,6 @@ int phase_bouce(char *str, char first, char last, char end)
     for (int i = 0; str[i] != end; i++)
         if (str[i] >= first && str[i] <= last)
             count++;
+
     return (count);
 }
