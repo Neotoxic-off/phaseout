@@ -3,28 +3,28 @@
 char *test_is_equal()
 {
     if (phase_equals("test\0", "test\0", EMPTY) == True) {
-        return ("SUCCESS : is equal\n\0");
+        return ("SUCCESS : is equal\0");
     }
 
-    return ("FAIL    : is equal\n\0");
+    return ("FAIL    : is equal\0");
 }
 
 char *test_is_not_equal()
 {
     if (phase_equals("test\0", "tess\0", EMPTY) == False) {
-        return ("SUCCESS : is not equal\n\0");
+        return ("SUCCESS : is not equal\0");
     }
 
-    return ("FAIL    : is not equal\n\0");
+    return ("FAIL    : is not equal\0");
 }
 
 char *test_wrong_string_equal()
 {
     if (phase_equals("test\0", "tes\0", EMPTY) == Error) {
-        return ("SUCCESS : wrong string equal\n\0");
+        return ("SUCCESS : wrong string equal\0");
     }
 
-    return ("FAIL    : wrong string equal\n\0");
+    return ("FAIL    : wrong string equal\0");
 }
 
 char *test_string_append()
@@ -33,10 +33,10 @@ char *test_string_append()
     if (phase_equals(append, "testtest\0", EMPTY) == True) {
         free(append);
 
-        return ("SUCCESS : string append\n\0");
+        return ("SUCCESS : string append\0");
     }
 
-    return ("FAIL    : string append\n\0");
+    return ("FAIL    : string append\0");
 }
 
 char *test_char_append()
@@ -46,10 +46,10 @@ char *test_char_append()
     if (phase_equals(append, "testt\0", EMPTY) == True) {
         free(append);
 
-        return ("SUCCESS : char append\n\0");
+        return ("SUCCESS : char append\0");
     }
 
-    return ("FAIL    : char append\n\0");
+    return ("FAIL    : char append\0");
 }
 
 char *test_set()
@@ -59,10 +59,10 @@ char *test_set()
     if (phase_equals(array, "test\0", EMPTY) == True) {
         free(array);
 
-        return ("SUCCESS : set\n\0");
+        return ("SUCCESS : set\0");
     }
 
-    return ("FAIL    : set\n\0");
+    return ("FAIL    : set\0");
 }
 
 char *test_split_1()
@@ -74,10 +74,10 @@ char *test_split_1()
         free(array);
         phase_ffree(splitted, NULL);
 
-        return ("SUCCESS : test split 1\n\0");
+        return ("SUCCESS : test split 1\0");
     }
 
-    return ("FAIL    : test split 1\n\0");
+    return ("FAIL    : test split 1\0");
 }
 
 char *test_split_2()
@@ -89,10 +89,10 @@ char *test_split_2()
         free(array);
         phase_ffree(splitted, NULL);
 
-        return ("SUCCESS : test split 2\n\0");
+        return ("SUCCESS : test split 2\0");
     }
 
-    return ("FAIL    : test split 2\n\0");
+    return ("FAIL    : test split 2\0");
 }
 
 char *test_split_3()
@@ -104,59 +104,61 @@ char *test_split_3()
         free(array);
         phase_ffree(splitted, NULL);
 
-        return ("SUCCESS : test split 3\n\0");
+        return ("SUCCESS : test split 3\0");
     }
 
-    return ("FAIL    : test split 3\n\0");
+    return ("FAIL    : test split 3\0");
 }
 
 char *test_atoi()
 {
     if (phase_atoi("123\0", EMPTY) == 123) {
-        return ("SUCCESS : test atoi\n\0");
+        return ("SUCCESS : test atoi\0");
     }
 
-    return ("FAIL    : test atoi\n\0");
+    return ("FAIL    : test atoi\0");
 }
 
 char *test_bounce_1()
 {
-    if (phase_bouce("mon test est mieux que celuit de paul\0", 'A', 'Z', EMPTY) == 0) {
-        return ("SUCCESS : test bounce 1\n\0");
+    if (phase_bounce("a simple test\0", 'A', 'Z', EMPTY) == 0) {
+        return ("SUCCESS : test bounce 1\0");
     }
 
-    return ("FAIL    : test bounce 1\n\0");
+    return ("FAIL    : test bounce 1\0");
 }
 
 char *test_bounce_2()
 {
-    if (phase_bouce("Mon Test est mieux que Celuit de Paul\0", 'A', 'Z', EMPTY) == 4) {
-        return ("SUCCESS : test bounce 2\n\0");
+    if (phase_bounce("Another Simple Test\0", 'A', 'Z', EMPTY) == 3) {
+        return ("SUCCESS : test bounce 2\0");
     }
 
-    return ("FAIL    : test bounce 2\n\0");
+    return ("FAIL    : test bounce 2\0");
 }
 
 char *test_bounce_3()
 {
-    if (phase_bouce("1 test 2\0", '0', '9', EMPTY) == 2) {
-        return ("SUCCESS : test bounce 3\n\0");
+    if (phase_bounce("Just 1 test 4 bounce\0", '0', '9', EMPTY) == 2) {
+        return ("SUCCESS : test bounce 3\0");
     }
 
-    return ("FAIL    : test bounce 3\n\0");
+    return ("FAIL    : test bounce 3\0");
 }
 
 char *test_count_1()
 {
-    if (phase_count("Mon Test est mieux que Celuit de Paul\0", 'e', EMPTY) == 6) {
-        return ("SUCCESS : test count 1\n\0");
+    if (phase_count("Character counter\0", 'e', EMPTY) == 2) {
+        return ("SUCCESS : test count 1\0");
     }
 
-    return ("FAIL    : test count 1\n\0");
+    return ("FAIL    : test count 1\0");
 }
 
 int main(void)
 {
+    phase_writeline("\nSTARTING TESTS\0", EMPTY);
+
     // EQUAL
     phase_writeline("\n---------- EQUAL ----------\n\0", EMPTY);
     phase_writeline(test_is_equal(), EMPTY);
@@ -192,6 +194,7 @@ int main(void)
     // COUNT
     phase_writeline("\n---------- COUNT ----------\n\0", EMPTY);
     phase_writeline(test_count_1(), EMPTY);
-    
+
+    phase_writeline("\nTESTS COMPLETED\n\0", EMPTY);
     return (0);
 }

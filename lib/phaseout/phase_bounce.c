@@ -1,6 +1,6 @@
 #include "PHASEOUT.h"
 
-int phase_bouce(char *str, char first, char last, char end)
+int phase_bounce(char *str, char first, char last, char end)
 {
     int count = 0;
 
