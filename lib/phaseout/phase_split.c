@@ -7,7 +7,8 @@ char **phase_split(char *array, char sep, char end, char *s_end, char f_end)
     char **split = phase_mmalloc(character_count + 1, s_end);
     int floor = 0;
     int previous = 0;
-    char *appened = NULL;
+    char *append = NULL;
+    char *string = NULL;
 
     for (int i = 0; i < array_length; i++) {
         if (array[i] == sep) {
@@ -17,14 +18,12 @@ char **phase_split(char *array, char sep, char end, char *s_end, char f_end)
                 split[floor] = phase_malloc(1, f_end);
                 previous = floor;
             }
-            appened = phase_append(split[floor], phase_tostring(array[i], f_end), f_end);
-            if (split[floor])
-                free(split[floor]);
-            split[floor] = appened;
-            if (appened)
-                free(appened);
+            string = phase_tostring(array[i], f_end);
+            append = phase_append(split[floor], string, f_end);
+            free(string);
+            free(split[floor]);
+            split[floor] = append;
         }
     }
-
     return (split);
 }

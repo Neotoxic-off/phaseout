@@ -1,41 +1,77 @@
-# phaseout
-Let's make the C even better
+<p align = "center">
+    <img alt = "logo" width="500" height="100" src = "https://raw.githubusercontent.com/Neotoxic-off/phaseout/main/img/logo.png"/>
+<p/>
 
-```H
-#include <stddef.h>
-#include <stdlib.h>
-#include <unistd.h>
+<p align = "center">
+    <img src="https://img.shields.io/badge/Language-red?style=for-the-badge&logo=C">
+    <img src="https://img.shields.io/badge/0.1.2-purple?style=for-the-badge&logo=V">
+    <img src="https://img.shields.io/badge/Status-in%20development-green?style=for-the-badge">
+<p/>
 
-// DISPLAY
-int phase_writenbr(int);
+*Let's make the C even better*
+
+<a href = "https://github.com/Neotoxic-off/phaseout/blob/master/DOCUMENTATION.md">DOCUMENTATION</a>
+
+## DEFINE
+---
+- [X] **True : 1**
+- [X] **False : 0**
+- [X] **Error: -1**
+
+- [X] **EMPTY : '\0'**
+- [X] **LINE : '\n'**
+- [X] **TAB: '\t'**
+---
+
+## FUNCTIONS
+---
+## DISPLAY
+```C
+int phase_writenum(int);
 int phase_writechar(char);
 int phase_writeline(char *, char);
+```
 
-// CHECK
+### CHECK
+```C
 int phase_equals(char *, char *, char);
 int phase_prime(int);
+```
 
-// MANIPULATION
+## MANIPULATION
+```C
 char *phase_set(char *, char);
-char *phase_append(char *, char*, char);
+char *phase_append(char *, char *, char);
 char *phase_reverse(char *, char);
+char **phase_split(char *, char, char, char *, char);
+```
 
-// LENGTH
+## LENGTH
+```C
 int phase_length(char *, char);
 int phase_llength(char **, char *);
 int phase_nlength(int);
 int phase_count(char *, char, char);
 int phase_bouce(char *, char, char, char);
+```
 
-// ALLOCATION
+## ALLOCATION
+```C
 char *phase_malloc(int, char);
+char **phase_mmalloc(int, char *);
 int *phase_malloi(int, int);
+```
 
-// FREE
+## FREE
+```C
 int phase_ffree(char **, char *);
+```
 
-// CONVERT
+## CONVERT
+```C
 int phase_atoi(char *, char);
 char *phase_itoa(int, char);
-
+char *phase_tostring(char, char);
 ```
+
+---

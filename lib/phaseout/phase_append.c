@@ -10,7 +10,6 @@ char *phase_append(char *base, char *add, char end)
     for (int i = 0; i < base_length; i++, index++) {
         array[index] = base[i];
     }
-
     for (int i = 0; i < add_length; i++, index++) {
         array[index] = add[i];
     }

@@ -21,7 +21,7 @@ int phase_prime(int);
 
 // MANIPULATION
 char *phase_set(char *, char);
-char *phase_append(char *, char*, char);
+char *phase_append(char *, char *, char);
 char *phase_reverse(char *, char);
 char **phase_split(char *, char, char, char *, char);
 

@@ -119,6 +119,41 @@ char *test_atoi()
     return ("FAIL    : test atoi\n\0");
 }
 
+char *test_bounce_1()
+{
+    if (phase_bouce("mon test est mieux que celuit de paul\0", 'A', 'Z', EMPTY) == 0) {
+        return ("SUCCESS : test bounce 1\n\0");
+    }
+
+    return ("FAIL    : test bounce 1\n\0");
+}
+
+char *test_bounce_2()
+{
+    if (phase_bouce("Mon Test est mieux que Celuit de Paul\0", 'A', 'Z', EMPTY) == 4) {
+        return ("SUCCESS : test bounce 2\n\0");
+    }
+
+    return ("FAIL    : test bounce 2\n\0");
+}
+
+char *test_bounce_3()
+{
+    if (phase_bouce("1 test 2\0", '0', '9', EMPTY) == 2) {
+        return ("SUCCESS : test bounce 3\n\0");
+    }
+
+    return ("FAIL    : test bounce 3\n\0");
+}
+
+char *test_count_1()
+{
+    if (phase_count("Mon Test est mieux que Celuit de Paul\0", 'e', EMPTY) == 6) {
+        return ("SUCCESS : test count 1\n\0");
+    }
+
+    return ("FAIL    : test count 1\n\0");
+}
 
 int main(void)
 {
@@ -147,6 +182,16 @@ int main(void)
     // ATOI
     phase_writeline("\n---------- ATOI ----------\n\0", EMPTY);
     phase_writeline(test_atoi(), EMPTY);
+
+    // BOUNCE
+    phase_writeline("\n---------- BOUNCE ----------\n\0", EMPTY);
+    phase_writeline(test_bounce_1(), EMPTY);
+    phase_writeline(test_bounce_2(), EMPTY);
+    phase_writeline(test_bounce_3(), EMPTY);
+
+    // COUNT
+    phase_writeline("\n---------- COUNT ----------\n\0", EMPTY);
+    phase_writeline(test_count_1(), EMPTY);
     
     return (0);
 }
