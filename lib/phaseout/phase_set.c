@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2020
+** phaseout
+** File description:
+** phase_set.c
+*/
+
 #include "PHASEOUT.h"
 
 char *phase_set(char *add, char end)

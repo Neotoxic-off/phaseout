@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2020
+** phaseout
+** File description:
+** phase_prime.c
+*/
+
 #include "PHASEOUT.h"
 
 int phase_prime(int nb)

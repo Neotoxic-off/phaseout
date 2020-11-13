@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2020
+** phaseout
+** File description:
+** phase_mmalloc.c
+*/
+
 #include "PHASEOUT.h"
 
 char **phase_mmalloc(int size, char *end)

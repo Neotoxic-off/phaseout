@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2020
+** phaseout
+** File description:
+** phase_bounce.c
+*/
+
 #include "PHASEOUT.h"
 
 int phase_bounce(char *str, char first, char last, char end)

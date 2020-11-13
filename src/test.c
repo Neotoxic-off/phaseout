@@ -1,5 +1,6 @@
 #include "PHASEOUT.h"
 
+// CHECK
 char *test_is_equal()
 {
     if (phase_equals("test\0", "test\0", EMPTY) == True) {
@@ -27,8 +28,10 @@ char *test_wrong_string_equal()
     return ("FAIL    : wrong string equal\0");
 }
 
+// MANIPULATION
 char *test_string_append()
-{    char *append = phase_append("test\0", "test\0", EMPTY);
+{
+    char *append = phase_append("test\0", "test\0", EMPTY);
 
     if (phase_equals(append, "testtest\0", EMPTY) == True) {
         free(append);
@@ -68,7 +71,7 @@ char *test_set()
 char *test_split_1()
 {
     char *array = phase_set("split_0/", EMPTY);
-    char **splitted = phase_split(array, '/', EMPTY, NULL, EMPTY);
+    char **splitted = phase_split(array, '/', EMPTY, NULL);
 
     if (phase_equals(splitted[0], "split_0\0", EMPTY) == True) {
         free(array);
@@ -83,7 +86,7 @@ char *test_split_1()
 char *test_split_2()
 {
     char *array = phase_set("split_0/split_1", EMPTY);
-    char **splitted = phase_split(array, '/', EMPTY, NULL, EMPTY);
+    char **splitted = phase_split(array, '/', EMPTY, NULL);
 
     if (phase_equals(splitted[0], "split_0\0", EMPTY) == True && phase_equals(splitted[1], "split_1\0", EMPTY) == True) {
         free(array);
@@ -98,7 +101,7 @@ char *test_split_2()
 char *test_split_3()
 {
     char *array = phase_set("split_0/split_1/split_2", EMPTY);
-    char **splitted = phase_split(array, '/', EMPTY, NULL, EMPTY);
+    char **splitted = phase_split(array, '/', EMPTY, NULL);
 
     if (phase_equals(splitted[0], "split_0\0", EMPTY) == True && phase_equals(splitted[1], "split_1\0", EMPTY) == True && phase_equals(splitted[2], "split_2\0", EMPTY) == True) {
         free(array);
@@ -108,15 +111,6 @@ char *test_split_3()
     }
 
     return ("FAIL    : test split 3\0");
-}
-
-char *test_atoi()
-{
-    if (phase_atoi("123\0", EMPTY) == 123) {
-        return ("SUCCESS : test atoi\0");
-    }
-
-    return ("FAIL    : test atoi\0");
 }
 
 char *test_bounce_1()
@@ -154,6 +148,17 @@ char *test_count_1()
 
     return ("FAIL    : test count 1\0");
 }
+
+// CONVERT
+char *test_atoi()
+{
+    if (phase_atoi("123\0", EMPTY) == 123) {
+        return ("SUCCESS : test atoi\0");
+    }
+
+    return ("FAIL    : test atoi\0");
+}
+
 
 int main(void)
 {

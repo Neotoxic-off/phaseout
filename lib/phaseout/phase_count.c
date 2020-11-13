@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2020
+** phaseout
+** File description:
+** phase_count.c
+*/
+
 #include "PHASEOUT.h"
 
 int phase_count(char *str, char c, char end)

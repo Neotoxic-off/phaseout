@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2020
+** phaseout
+** File description:
+** phase_nlength.c
+*/
+
 #include "PHASEOUT.h"
 
 int phase_nlength(int num)

@@ -68,7 +68,7 @@ char *phase_reverse(char *<ARRAY>, char <LAST CHARACTER>);
 **phase_split**: *Split char\* in char\*\**
 
 ```H
-char **phase_split(char *<ARRAY>, char <SPLIT CHARACTER>, char <LAST CHARACTER>, char *<LAST ARRAY>, char <LAST CHARACTER>);
+char **phase_split(char *<ARRAY>, char <SPLIT CHARACTER>, char <LAST CHARACTER>, char *<LAST ARRAY>);
 ```
 
 ## LENGTH

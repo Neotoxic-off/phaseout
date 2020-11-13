@@ -14,35 +14,12 @@
 
 ## DEFINE
 
-### BOOLEAN
 - [X] **True : 1**
 - [X] **False : 0**
 - [X] **Error: -1**
-
-### CHARACTERS
 - [X] **EMPTY : '\0'**
 - [X] **LINE : '\n'**
 - [X] **TAB: '\t'**
-
-### COLORS NORMAL
-- [X] **NORMAL : "\033[0m"**
-- [X] **RED : "\033[31m"**
-- [X] **GREEN : "\033[32m"**
-- [X] **YELLOW : "\033[33m"**
-- [X] **BLUE : "\033[34m"**
-- [X] **MAGENTA : "\033[35m"**
-- [X] **CYAN : "\033[36m"**
-- [X] **WHITE : "\033[37m"**
-
-### COLORS BOLD
-- [X] **B_NORMAL : "\033[1;0m"**
-- [X] **B_RED : "\033[1;31m"**
-- [X] **B_GREEN : "\033[1;32m"**
-- [X] **B_YELLOW : "\033[1;33m"**
-- [X] **B_BLUE : "\033[1;34m"**
-- [X] **B_MAGENTA : "\033[1;35m"**
-- [X] **B_CYAN : "\033[1;36m"**
-- [X] **B_WHITE : "\033[1;37m"**
 
 ## FUNCTIONS
 

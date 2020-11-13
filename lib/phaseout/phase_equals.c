@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2020
+** phaseout
+** File description:
+** phase_equals.c
+*/
+
 #include "PHASEOUT.h"
 
 int phase_equals(char *string, char *search, char end)
