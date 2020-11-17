@@ -22,13 +22,19 @@ int phase_writechar(char <CHARACTER>);
 **phase_write**: *Print char\**
 
 ```H
-int phase_write(char *<ARRAY>);
+int phase_write(char *<ARRAY>, char <LAST CHARACTER>);
+```
+
+**phase_write**: *Print char\* with custom last characters*
+
+```H
+int phase_write(char *<ARRAY>, char <LAST CHARACTER>, char <CUSTOM CHARACTER>);
 ```
 
 **phase_writeline**: *Print char\* with \n*
 
 ```H
-int phase_writeline(char *<ARRAY>);
+int phase_writeline(char *<ARRAY>, char <LAST CHARACTER>);
 ```
 
 ## CHECK

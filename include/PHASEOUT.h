@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2020
+** phaseout
+** File description:
+** PHASEOUT.h
+*/
+
 #include <stddef.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -13,6 +20,8 @@
 #define TAB   '\t'
 
 // DISPLAY
+int phase_write(char *, char);
+int phase_writer(char *, char, char);
 int phase_writenum(int);
 int phase_writechar(char);
 int phase_writeline(char *, char);

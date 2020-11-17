@@ -4,7 +4,7 @@
 
 <p align = "center">
     <img src="https://img.shields.io/badge/Language-red?style=for-the-badge&logo=C">
-    <img src="https://img.shields.io/badge/0.3.1-purple?style=for-the-badge&logo=V">
+    <img src="https://img.shields.io/badge/0.4.0-purple?style=for-the-badge&logo=V">
     <img src="https://img.shields.io/badge/Status-in%20development-green?style=for-the-badge">
 <p/>
 
@@ -30,6 +30,8 @@
 
 ## DISPLAY
 ```C
+int phase_write(char*, char);
+int phase_writer(char*, char, char);
 int phase_writenum(int);
 int phase_writechar(char);
 int phase_writeline(char *, char);

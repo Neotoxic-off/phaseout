@@ -1,3 +1,10 @@
+##
+## EPITECH PROJECT, 2020
+## phaseout
+## File description:
+## Makefile
+##
+
 OBJS	=	$(patsubst %.c, %.o, $(wildcard ./src/*.c))
 
 LIBNAME	=	phaseout.a
