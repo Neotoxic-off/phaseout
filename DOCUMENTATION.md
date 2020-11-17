@@ -25,10 +25,10 @@ int phase_writechar(char <CHARACTER>);
 int phase_write(char *<ARRAY>, char <LAST CHARACTER>);
 ```
 
-**phase_write**: *Print char\* with custom last characters*
+**phase_writer**: *Print char\* with custom last characters*
 
 ```H
-int phase_write(char *<ARRAY>, char <LAST CHARACTER>, char <CUSTOM CHARACTER>);
+int phase_writer(char *<ARRAY>, char <LAST CHARACTER>, char <CUSTOM CHARACTER>);
 ```
 
 **phase_writeline**: *Print char\* with \n*
