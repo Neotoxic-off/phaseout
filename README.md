@@ -14,12 +14,17 @@
 
 ## DEFINE
 
-- [X] **True : 1**
-- [X] **False : 0**
-- [X] **Error: -1**
-- [X] **EMPTY : '\0'**
-- [X] **LINE : '\n'**
-- [X] **TAB: '\t'**
+```H
+// BOOLEAN
+#define True  1
+#define False 0
+#define Error -1
+
+// CHARACTERS
+#define EMPTY '\0'
+#define LINE  '\n'
+#define TAB   '\t'
+```
 
 ## FUNCTIONS
 
