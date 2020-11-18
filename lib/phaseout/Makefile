@@ -7,9 +7,12 @@
 
 OBJS	=	$(patsubst %.c, %.o, $(wildcard ./*.c))
 
+HFILE	=	../../include/PHASEOUT.h
+HFILE	+=	../../include/STATUS.h
+
 NAME 	=	phaseout.a
 
-CFLAGS	=	-I .
+CFLAGS	=	-I ../../include
 CFLAGS	+=	-g3
 CFLAGS	+=	-Wall -Wextra -O3 -fno-builtin
 
@@ -22,7 +25,7 @@ all:	$(NAME)
 $(NAME):	$(OBJS)
 	@$(AR) $(NAME) $(OBJS)
 
-$(OBJS): PHASEOUT.h
+$(OBJS): $(HFILE)
 
 clean:
 	@$(RM) $(OBJS)

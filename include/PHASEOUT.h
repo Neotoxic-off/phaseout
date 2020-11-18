@@ -9,6 +9,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#ifndef essential
+#define essential
+
 // BOOLEAN
 #define True  1
 #define False 0
@@ -18,6 +21,8 @@
 #define EMPTY '\0'
 #define LINE  '\n'
 #define TAB   '\t'
+
+#endif
 
 // DISPLAY
 int phase_write(char *, char);

@@ -11,6 +11,7 @@ LIBNAME	=	phaseout.a
 LIBPATH	=	./lib/phaseout/
 
 HFILE	=	./include/PHASEOUT.h
+HFILE	+=	./include/STATUS.h
 
 NAME	=	phaseout_test
 

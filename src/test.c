@@ -1,4 +1,5 @@
 #include "PHASEOUT.h"
+#include "STATUS.h"
 
 // CHECK
 char *test_is_equal()
@@ -159,6 +160,25 @@ char *test_atoi()
     return ("FAIL    : test atoi\0");
 }
 
+// STATUS CODE
+char *test_status_code_1()
+{
+    if (phase_atoi("404\0", EMPTY) == NOT_FOUND) {
+        return ("SUCCESS : test status code 1\0");
+    }
+
+    return ("FAIL    : test status code 1\0");
+}
+
+char *test_status_code_2()
+{
+    if (phase_atoi("200\0", EMPTY) == OK) {
+        return ("SUCCESS : test status code 2\0");
+    }
+
+    return ("FAIL    : test status code 2\0");
+}
+
 
 int main(void)
 {
@@ -199,6 +219,11 @@ int main(void)
     // COUNT
     phase_writeline("\n---------- COUNT ----------\n\0", EMPTY);
     phase_writeline(test_count_1(), EMPTY);
+
+    // STATUS CODE
+    phase_writeline("\n---------- STATUS CODE ----------\n\0", EMPTY);
+    phase_writeline(test_status_code_1(), EMPTY);
+    phase_writeline(test_status_code_2(), EMPTY);
 
     phase_writeline("\nTESTS COMPLETED\n\0", EMPTY);
     return (0);
