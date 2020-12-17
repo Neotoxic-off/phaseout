@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2020
 ** phaseout
 ** File description:
-** phase_writeline.c
+** phase_append.c
 */
 
 #include "PHASEOUT.h"

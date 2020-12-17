@@ -56,6 +56,19 @@ char *test_char_append()
     return ("FAIL    : char append\0");
 }
 
+char *test_insert()
+{
+    char *data = phase_insert("this is my test\0", 's', EMPTY);
+
+    if (phase_equals(data, "this is my tests\0", EMPTY) == True) {
+        free(data);
+
+        return ("SUCCESS : insert\0");
+    }
+
+    return ("FAIL    : insert\0");
+}
+
 char *test_set()
 {
     char *array = phase_set("test", EMPTY);
@@ -195,10 +208,13 @@ int main(void)
     phase_writeline(test_string_append(), EMPTY);
     phase_writeline(test_char_append(), EMPTY);
 
+    // INSERT
+    phase_writeline("\n---------- INSERT ----------\n\0", EMPTY);
+    phase_writeline(test_insert(), EMPTY);
+
     // SET
     phase_writeline("\n---------- SET ----------\n\0", EMPTY);
     phase_writeline(test_set(), EMPTY);
-
 
     // SPLIT
     phase_writeline("\n---------- SPLIT ----------\n\0", EMPTY);

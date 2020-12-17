@@ -77,6 +77,12 @@ char *phase_reverse(char *<ARRAY>, char <LAST CHARACTER>);
 char **phase_split(char *<ARRAY>, char <SPLIT CHARACTER>, char <LAST CHARACTER>, char *<LAST ARRAY>);
 ```
 
+**phase_insert**: *Add char at the end of the char\**
+
+```H
+char *phase_insert(char *<ARRAY>, char <ADD>, char <LAST CHARACTER>);
+```
+
 ## LENGTH
 
 **phase_length**: *Count char\* length*
