@@ -95,6 +95,12 @@ char *phase_insert(char *<ARRAY>, char <ADD>, char <LAST CHARACTER>);
 char *phase_hyper(char *<BASE>, char **<ARRAY>, char <LAST CHARACTER>);
 ```
 
+**phase_purge**: *Remove specific char in char\**
+
+```H
+char *phase_purge(char *<BASE>, char <REMOVE>, char <LAST CHARACTER>);
+```
+
 ## LENGTH
 
 **phase_length**: *Count char\* length*

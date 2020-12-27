@@ -9,7 +9,7 @@
 
 int phase_cnf(char *str)
 {
-    if (str != NULL && str) {
+    if (str) {
         free(str);
         return (1);
     }
