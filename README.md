@@ -81,3 +81,13 @@ int phase_atoi(char *, char);
 char *phase_itoa(int, char);
 char *phase_tostring(char, char);
 ```
+
+## Author
+
+[![Neotoxic-off](https://avatars3.githubusercontent.com/u/44700383?s=100&u=1abb02cc78d2335012ae1ffd6988c42e46a3b904&v=4)](https://github.com/Neotoxic-off) |
+--- |
+[Neotoxic-off](https://github.com/Neotoxic-off) |
+
+## Contributors
+
+[Contributors](https://github.com/Neotoxic-off/phaseout/graphs/contributors)

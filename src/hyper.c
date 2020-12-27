@@ -18,13 +18,27 @@ char *hyper_0()
 char *hyper_1()
 {
     char *array[5] = { "0", "1", "2", "3", "4" };  
-    char *data = phase_hyper("test $ done and test $ done\0", array, EMPTY);
+    char *data = phase_hyper("test $ $ $ $ $ done\0", array, EMPTY);
 
-    if (phase_equals(data, "test 0 done and test 1 done", EMPTY) == True) {
+    if (phase_equals(data, "test 0 1 2 3 4 done", EMPTY) == True) {
         free(data);
 
         return ("SUCCESS : hyper_1\0");
     }
 
     return ("FAIL    : hyper_1\0");
+}
+
+char *hyper_2()
+{
+    char *array[5] = { "0", "1", "2", "3", "4" };  
+    char *data = phase_hyper("$$test $ done and test $ done\0", array, EMPTY);
+
+    if (phase_equals(data, "01test 2 done and test 3 done", EMPTY) == True) {
+        free(data);
+
+        return ("SUCCESS : hyper_2\0");
+    }
+
+    return ("FAIL    : hyper_2\0");
 }

@@ -3,42 +3,11 @@
 
 #include "TEST.h"
 
-
-
-// CONVERT
-char *test_atoi()
-{
-    if (phase_atoi("123\0", EMPTY) == 123) {
-        return ("SUCCESS : test atoi\0");
-    }
-
-    return ("FAIL    : test atoi\0");
-}
-
-// STATUS CODE
-char *test_status_code_1()
-{
-    if (phase_atoi("404\0", EMPTY) == NOT_FOUND) {
-        return ("SUCCESS : test status code 1\0");
-    }
-
-    return ("FAIL    : test status code 1\0");
-}
-
-char *test_status_code_2()
-{
-    if (phase_atoi("200\0", EMPTY) == OK) {
-        return ("SUCCESS : test status code 2\0");
-    }
-
-    return ("FAIL    : test status code 2\0");
-}
-
 int main(void)
 {
-    phase_writeline(is_equal_0(), EMPTY);
-    phase_writeline(is_equal_1(), EMPTY);
-    phase_writeline(is_equal_2(), EMPTY);
+    phase_writeline(equals_0(), EMPTY);
+    phase_writeline(equals_1(), EMPTY);
+    phase_writeline(equals_2(), EMPTY);
     phase_writeline(append_0(), EMPTY);
     phase_writeline(append_1(), EMPTY);
     phase_writeline(append_2(), EMPTY);
@@ -60,6 +29,12 @@ int main(void)
     phase_writeline(cnf_0(), EMPTY);
     phase_writeline(cnf_1(), EMPTY);
     phase_writeline(cnf_2(), EMPTY);
+    phase_writeline(hyper_0(), EMPTY);
+    phase_writeline(hyper_1(), EMPTY);
+    phase_writeline(hyper_2(), EMPTY);
+    phase_writeline(purge_0(), EMPTY);
+    phase_writeline(purge_1(), EMPTY);
+    phase_writeline(purge_2(), EMPTY);
 
     return (0);
 }

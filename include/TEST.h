@@ -1,7 +1,7 @@
 
-char *is_equal_0();
-char *is_equal_1();
-char *is_equal_2();
+char *equals_0();
+char *equals_1();
+char *equals_2();
 
 char *append_0();
 char *append_1();
@@ -23,6 +23,10 @@ char *insert_0();
 char *insert_1();
 char *insert_2();
 
+char *purge_0();
+char *purge_1();
+char *purge_2();
+
 char *set_0();
 char *set_1();
 char *set_2();
@@ -33,3 +37,4 @@ char *split_2();
 
 char *hyper_0();
 char *hyper_1();
+char *hyper_2();

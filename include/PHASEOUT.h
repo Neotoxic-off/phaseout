@@ -45,6 +45,7 @@ char *phase_insert(char *, char, char);
 char *phase_reverse(char *, char);
 char **phase_split(char *, char, char, char *);
 char *phase_hyper(char *, char **, char);
+char *phase_purge(char *, char, char);
 
 // LENGTH
 int phase_length(char *, char);
