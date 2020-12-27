@@ -29,16 +29,16 @@ $(OBJS): $(HFILE)
 
 clean:
 	@$(RM) $(OBJS)
-	@echo "\e[32m[OK]\033[0m Cleanned"
+	@echo "\e[32m[ DONE ]\033[0m Cleanned"
 
 fclean:
 	@$(RM) $(OBJS)
 	@rm -f $(NAME)
-	@echo "\e[32m[OK]\033[0m Cleanned"
+	@echo "\e[32m[ DONE ] \033[0m Cleanned"
 
 re:	fclean all
 
 .c.o:	%.c
-	@$(CC) -c $< -o $@ $(CFLAGS) && echo "\e[32m[OK]\033[0m" $< || echo "\e[91;5m[KO]\e[25m" $< "\033[0m"
+	@$(CC) -c $< -o $@ $(CFLAGS) && echo "\e[32m[ DONE ] \033[0m" $< || echo "\e[91;5m[ FAIL ] \e[25m" $< "\033[0m"
 
 .PHONY: all clean fclean re

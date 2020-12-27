@@ -17,6 +17,8 @@
 #define False 0
 #define Error -1
 
+#define EError
+
 // CHARACTERS
 #define EMPTY '\0'
 #define LINE  '\n'
@@ -41,6 +43,7 @@ char *phase_append(char *, char *, char);
 char *phase_insert(char *, char, char);
 char *phase_reverse(char *, char);
 char **phase_split(char *, char, char, char *);
+char *phase_hyper(char *, char **, char);
 
 // LENGTH
 int phase_length(char *, char);

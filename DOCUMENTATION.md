@@ -83,6 +83,12 @@ char **phase_split(char *<ARRAY>, char <SPLIT CHARACTER>, char <LAST CHARACTER>,
 char *phase_insert(char *<ARRAY>, char <ADD>, char <LAST CHARACTER>);
 ```
 
+**phase_hyper**: *Set multiple characters to char*
+
+```H
+char *phase_hyper(char *<BASE>, char **<ARRAY>, char <LAST CHARACTER>);
+```
+
 ## LENGTH
 
 **phase_length**: *Count char\* length*

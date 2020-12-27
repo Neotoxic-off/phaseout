@@ -82,6 +82,21 @@ char *test_set()
     return ("FAIL    : set\0");
 }
 
+// HYPER
+char *test_hyper()
+{
+    char *array[2] = { "1", "2" };  
+    char *data = phase_hyper("test $ done and test $ done\0", array, EMPTY);
+
+    if (phase_equals(data, "test 1 done and test 2 done", EMPTY) == True) {
+        free(data);
+
+        return ("SUCCESS : hyper\0");
+    }
+
+    return ("FAIL    : hyper\0");
+}
+
 char *test_split_1()
 {
     char *array = phase_set("split_0/", EMPTY);
@@ -231,6 +246,10 @@ int main(void)
     phase_writeline(test_bounce_1(), EMPTY);
     phase_writeline(test_bounce_2(), EMPTY);
     phase_writeline(test_bounce_3(), EMPTY);
+
+    // HYPER
+    phase_writeline("\n---------- HYPER ----------\n\0", EMPTY);
+    phase_writeline(test_hyper(), EMPTY);
 
     // COUNT
     phase_writeline("\n---------- COUNT ----------\n\0", EMPTY);

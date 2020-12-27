@@ -50,6 +50,7 @@ char *phase_append(char *, char *, char);
 char *phase_reverse(char *, char);
 char **phase_split(char *, char, char, char *);
 char *phase_insert(char *, char, char);
+char *phase_hyper(char *, char **, char);
 ```
 
 ## LENGTH
