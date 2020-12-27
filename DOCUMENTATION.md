@@ -51,6 +51,12 @@ int phase_equals(char *<ARRAY 1>, char *<ARRAY 2>, char <LAST CHARACTER>);
 int phase_prime(int <NUMBER>);
 ```
 
+**phase_cnf**: *Check and free*
+
+```H
+int phase_cnf(char *<ARRAY>);
+```
+
 ## MANIPULATION
 
 **phase_set**: *Allocate char\* with content*

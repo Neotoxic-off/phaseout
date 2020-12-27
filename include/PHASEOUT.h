@@ -36,6 +36,7 @@ int phase_writeline(char *, char);
 // CHECK
 int phase_equals(char *, char *, char);
 int phase_prime(int);
+int phase_cnf(char *);
 
 // MANIPULATION
 char *phase_set(char *, char);
@@ -64,3 +65,6 @@ int phase_ffree(char **, char *);
 int phase_atoi(char *, char);
 char *phase_itoa(int, char);
 char *phase_tostring(char, char);
+
+// CALCUL
+int phase_range(int, int);

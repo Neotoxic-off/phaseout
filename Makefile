@@ -12,8 +12,9 @@ LIBPATH	=	./lib/phaseout/
 
 HFILE	=	./include/PHASEOUT.h
 HFILE	+=	./include/STATUS.h
+HFILE	+=	./include/TEST.h
 
-NAME	=	phaseout_test
+NAME	=	test
 
 CFLAGS	=	-I ./include
 CFLAGS	+=	-g3
