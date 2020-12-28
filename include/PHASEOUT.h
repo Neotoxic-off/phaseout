@@ -17,7 +17,7 @@
 #define False 0
 #define Error -1
 
-#define EError
+#define EError 84
 
 // CHARACTERS
 #define EMPTY '\0'

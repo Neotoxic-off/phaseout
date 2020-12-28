@@ -18,8 +18,8 @@ int phase_equals(char *string, char *search, char end)
                 return (0);
             }
         }
-        return (1);
+        return (True);
     }
 
-    return (-1);
+    return (False);
 }

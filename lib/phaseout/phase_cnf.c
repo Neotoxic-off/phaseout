@@ -11,8 +11,8 @@ int phase_cnf(char *str)
 {
     if (str) {
         free(str);
-        return (1);
+        return (True);
     }
 
-    return (0);
+    return (False);
 }

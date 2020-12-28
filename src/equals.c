@@ -21,7 +21,7 @@ char *equals_1()
 
 char *equals_2()
 {
-    if (phase_equals("test\0", "tes\0", EMPTY) == Error) {
+    if (phase_equals("test\0", "tes\0", EMPTY) == False) {
         return ("SUCCESS : equals_2\0");
     }
 

@@ -12,5 +12,5 @@ int phase_writeline(char *str, char end)
     if (write(1, str, phase_length(str, end)))
         return (phase_writechar('\n'));
 
-    return (0);
+    return (Error);
 }

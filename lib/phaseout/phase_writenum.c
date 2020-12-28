@@ -25,5 +25,5 @@ int phase_writenum(int nb)
             phase_writechar(48 + nb % 10);
     }
 
-    return (0);
+    return (True);
 }

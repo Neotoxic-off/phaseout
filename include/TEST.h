@@ -1,3 +1,9 @@
+/*
+** EPITECH PROJECT, 2020
+** phaseout
+** File description:
+** TEST.h
+*/
 
 char *equals_0();
 char *equals_1();

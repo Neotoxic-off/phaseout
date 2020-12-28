@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2020
+** phaseout
+** File description:
+** STATUS.h
+*/
+
 #ifndef https_status_codes
 #define https_status_codes
 

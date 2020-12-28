@@ -10,8 +10,8 @@
 int phase_range(int i, int limit)
 {
     if (i == limit) {
-        return (1);
+        return (True);
     }
 
-    return (0);
+    return (False);
 }
