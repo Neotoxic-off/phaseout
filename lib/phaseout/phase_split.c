@@ -7,21 +7,12 @@
 
 #include "PHASEOUT.h"
 
-int full_free(char *string, char *split)
-{
-    free(string);
-    free(split);
-
-    return (0);
-}
-
 char **phase_split(char *array, char sep, char end, char *s_end)
 {
     char **split = phase_mmalloc(phase_count(array, sep, end) + 1, s_end);
     int floor = 0;
     int previous = 0;
     char *append = NULL;
-    char *string = NULL;
 
     for (int i = 0; i < phase_length(array, end); i++) {
         if (array[i] == sep) {
@@ -31,9 +22,8 @@ char **phase_split(char *array, char sep, char end, char *s_end)
                 split[floor] = phase_malloc(1, end);
                 previous = floor;
             }
-            string = phase_tostring(array[i], end);
-            append = phase_append(split[floor], string, end);
-            full_free(string, split[floor]);
+            append = phase_insert(split[floor], array[i], end);
+            phase_cnf(split[floor]);
             split[floor] = append;
         }
     }

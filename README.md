@@ -4,7 +4,7 @@
 
 <p align = "center">
     <img src="https://img.shields.io/badge/Language-red?style=for-the-badge&logo=C">
-    <img src="https://img.shields.io/badge/1.1.1-purple?style=for-the-badge&logo=V">
+    <img src="https://img.shields.io/badge/1.1.2-purple?style=for-the-badge&logo=V">
     <img src="https://img.shields.io/badge/Status-in%20development-green?style=for-the-badge">
 <p/>
 
@@ -81,7 +81,7 @@ int phase_ffree(char **, char *);
 ```C
 int phase_atoi(char *, char);
 char *phase_itoa(int, char);
-char *phase_tostring(char, char);
+char *phase_ctoa(char, char);
 ```
 
 ## Author

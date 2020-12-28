@@ -66,7 +66,7 @@ int phase_ffree(char **, char *);
 // CONVERT
 int phase_atoi(char *, char);
 char *phase_itoa(int, char);
-char *phase_tostring(char, char);
+char *phase_ctoa(char, char);
 
 // CALCUL
 int phase_range(int, int);

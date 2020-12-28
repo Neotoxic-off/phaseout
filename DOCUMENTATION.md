@@ -181,10 +181,10 @@ int phase_atoi(char *<ARRAY>, char <LAST CHARACTER>);
 char *phase_itoa(int <NUMBER>, char <LAST CHARACTER>);
 ```
 
-**phase_tostring**: *Convert char to char\**
+**phase_ctoa**: *Convert char to char\**
 
 ```H
-char *phase_tostring(char <CHARACTER>, char <LAST CHARACTER>);;
+char *phase_ctoa(char <CHARACTER>, char <LAST CHARACTER>);;
 ```
 
 
