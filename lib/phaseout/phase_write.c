@@ -9,8 +9,5 @@
 
 int phase_write(char *str, char end)
 {
-    for (int i = 0; str[i] != end; i++)
-        phase_writechar(str[i]);
-
-    return (0);
+    return (write(1, str, phase_length(str, end)));
 }
