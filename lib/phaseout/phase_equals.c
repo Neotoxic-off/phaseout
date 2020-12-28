@@ -15,11 +15,11 @@ int phase_equals(char *string, char *search, char end)
     if (string_length == search_length && string_length > 0) {
         for (int i = 0; i < string_length; i++) {
             if (string[i] != search[i]) {
-                return (0);
+                return (False);
             }
         }
         return (True);
     }
 
-    return (False);
+    return (Error);
 }

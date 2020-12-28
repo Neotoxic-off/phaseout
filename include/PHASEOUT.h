@@ -40,6 +40,7 @@ int phase_cnf(char *);
 
 // MANIPULATION
 char *phase_set(char *, char);
+char **phase_sset(char *, char *, char);
 char *phase_append(char *, char *, char);
 char *phase_insert(char *, char, char);
 char *phase_reverse(char *, char);

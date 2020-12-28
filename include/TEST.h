@@ -37,6 +37,10 @@ char *set_0();
 char *set_1();
 char *set_2();
 
+char *sset_0();
+char *sset_1();
+char *sset_2();
+
 char *split_0();
 char *split_1();
 char *split_2();

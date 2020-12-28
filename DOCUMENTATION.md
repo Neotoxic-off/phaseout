@@ -65,6 +65,12 @@ int phase_cnf(char *<ARRAY>);
 char *phase_set(char *<ARRAY>, char <LAST CHARACTER>);
 ```
 
+**phase_sset**: *Allocate char\*\* with content*
+
+```H
+char **phase_sset(char *<ARRAY>, char *<LAST ARRAY>, char <LAST CHARACTER>);
+```
+
 **phase_append**: *Add char\* after the previous char\**
 
 ```H
