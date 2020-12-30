@@ -86,7 +86,7 @@ char *phase_ctoa(char, char);
 
 ## Author
 
-[![Neotoxic-off](https://avatars3.githubusercontent.com/u/44700383?s=100&u=1abb02cc78d2335012ae1ffd6988c42e46a3b904&v=4)](https://github.com/Neotoxic-off) |
+[![Neotoxic-off](https://avatars3.githubusercontent.com/u/44700383?s=100&u=5200eed594ec5ca91b694b0064ab67c9d5c5c85d&v=4)](https://github.com/Neotoxic-off) |
 --- |
 [Neotoxic-off](https://github.com/Neotoxic-off) |
 
