@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/Status-in%20development-green?style=for-the-badge">
 <p/>
 
-*💉 Let's mod the C *
+*💉 Let's mod the C*
 
 <a href = "https://github.com/Neotoxic-off/phaseout/blob/master/DOCUMENTATION.md">DOCUMENTATION</a>
 
