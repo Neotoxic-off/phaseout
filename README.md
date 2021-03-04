@@ -10,7 +10,7 @@
 
 *💉 Let's mod the C*
 
-<a href = "https://github.com/Neotoxic-off/phaseout/blob/master/DOCUMENTATION.md">DOCUMENTATION</a>
+<a href = "https://github.com/Neotoxic-off/phaseout/blob/main/DOCUMENTATION.md">DOCUMENTATION</a>
 
 ## REQUIREMENTS
 
