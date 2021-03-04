@@ -7,11 +7,11 @@
 
 #include "PHASEOUT.h"
 
-int phase_count(char *str, char c, char end)
+size_t phase_count(char *str, char c, char end)
 {
-    int count = 0;
+    size_t count = 0;
 
-    for (int i = 0; str[i] != end; i++)
+    for (size_t i = 0; str[i] != end; i++)
         if (str[i] == c)
             count++;
 

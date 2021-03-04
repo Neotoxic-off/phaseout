@@ -10,11 +10,11 @@
 char **phase_split(char *array, char sep, char end, char *s_end)
 {
     char **split = phase_mmalloc(phase_count(array, sep, end) + 1, s_end);
-    int floor = 0;
-    int previous = 0;
+    size_t floor = 0;
+    size_t previous = 0;
     char *append = NULL;
 
-    for (int i = 0; i < phase_length(array, end); i++) {
+    for (size_t i = 0; i < phase_length(array, end); i++) {
         if (array[i] == sep) {
             floor++;
         } else {

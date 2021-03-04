@@ -5,14 +5,12 @@
 ## Makefile
 ##
 
-OBJS	=	$(patsubst %.c, %.o, $(wildcard ./src/*.c))
+OBJS	=	$(patsubst %.c, %.o, $(shell find src -type f -name "*.c"))
 
 LIBNAME	=	phaseout.a
 LIBPATH	=	./lib/phaseout/
 
-HFILE	=	./include/PHASEOUT.h
-HFILE	+=	./include/STATUS.h
-HFILE	+=	./include/TEST.h
+HFILE	=	$(patsubst %.c, %.o, $(shell find include -type f -name "*.h"))
 
 NAME	=	test
 
@@ -20,7 +18,7 @@ CFLAGS	=	-I ./include
 CFLAGS	+=	-g3
 CFLAGS	+=	-Wall -Wextra -O3 -fno-builtin
 
-CC	=	@gcc
+CC	=	@clang
 RM	=	@rm -f
 
 all:	$(NAME)
@@ -39,7 +37,7 @@ clean:
 fclean:
 	@$(MAKE) fclean -C $(LIBPATH) --no-print-directory
 	@$(RM) $(OBJS)
-	@rm $(NAME)
+	@$(RM) $(NAME)
 	@echo "\e[32m[ DONE ]\033[0m  Cleanned"
 
 re:	fclean all

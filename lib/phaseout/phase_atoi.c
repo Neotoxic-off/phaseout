@@ -9,7 +9,7 @@
 
 int phase_atoi(char *str, char c)
 {
-    int size = phase_length(str, c) - 1;
+    int size = (int)phase_length(str, c) - 1;
     int number = 0;
     int i = 1;
 

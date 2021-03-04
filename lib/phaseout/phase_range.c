@@ -7,7 +7,7 @@
 
 #include "PHASEOUT.h"
 
-int phase_range(int i, int limit)
+size_t phase_range(size_t i, size_t limit)
 {
     if (i == limit) {
         return (True);

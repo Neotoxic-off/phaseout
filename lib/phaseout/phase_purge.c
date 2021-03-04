@@ -9,12 +9,12 @@
 
 char *phase_purge(char *array, char remove, char end)
 {
-    int len = phase_length(array, end);
-    int spaces = phase_count(array, remove, end);
+    size_t len = phase_length(array, end);
+    size_t spaces = phase_count(array, remove, end);
     char *new_array = phase_malloc(len - spaces, end);
     char *tmp = NULL;
 
-    for (int i = 0; i < len; i++) {
+    for (size_t i = 0; i < len; i++) {
         if (array[i] != remove) {
             tmp = phase_set(new_array, end);
             phase_cnf(new_array);

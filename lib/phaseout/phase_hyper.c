@@ -9,13 +9,13 @@
 
 char *phase_hyper(char *sentence, char **content, char end)
 {
-    int len_sentence = phase_length(sentence, end);
-    int index = 0;
+    size_t len_sentence = phase_length(sentence, end);
+    size_t index = 0;
     char indexer = '$';
     char *new_sentence = phase_malloc(len_sentence, end);
     char *tmp = NULL;
 
-    for (int i = 0; i < len_sentence; i++) {
+    for (size_t i = 0; i < len_sentence; i++) {
         if (sentence[i] == indexer) {
             tmp = phase_set(new_sentence, end);
             phase_cnf(new_sentence);

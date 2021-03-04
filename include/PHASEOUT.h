@@ -5,68 +5,72 @@
 ** PHASEOUT.h
 */
 
-#include <stddef.h>
-#include <stdlib.h>
-#include <unistd.h>
-
 #ifndef essential
-#define essential
+    #define essential
 
-// BOOLEAN
-#define True  1
-#define False 0
-#define Error -1
+    #include <stddef.h>
+    #include <stdlib.h>
+    #include <unistd.h>
 
-#define EError 84
+    // BOOLEAN
+    #define True  1
+    #define False 0
+    #define Error 84
 
-// CHARACTERS
-#define EMPTY '\0'
-#define LINE  '\n'
-#define TAB   '\t'
+    // CHARACTERS
+    #define EMPTY '\0'
+    #define LINE  '\n'
+    #define TAB   '\t'
 
-#endif
+#endif /* essential */
 
-// DISPLAY
-int phase_write(char *, char);
-int phase_writer(char *, char, char);
-int phase_writenum(int);
-int phase_writechar(char);
-int phase_writeline(char *, char);
+#ifndef phaseout
+    #define phaseout
 
-// CHECK
-int phase_equals(char *, char *, char);
-int phase_prime(int);
-int phase_cnf(char *);
+    // DISPLAY
+    ssize_t phase_write(char *, char);
+    ssize_t phase_writer(char *, char, char);
+    ssize_t phase_writenum(int);
+    ssize_t phase_writechar(char);
+    ssize_t phase_writeline(char *, char);
 
-// MANIPULATION
-char *phase_set(char *, char);
-char **phase_sset(char *, char *, char);
-char *phase_append(char *, char *, char);
-char *phase_insert(char *, char, char);
-char *phase_reverse(char *, char);
-char **phase_split(char *, char, char, char *);
-char *phase_hyper(char *, char **, char);
-char *phase_purge(char *, char, char);
+    // CHECK
+    size_t phase_equals(char *, char *, char);
+    size_t phase_endswith(char *, char *, char);
+    size_t phase_prime(size_t);
+    size_t phase_cnf(char *);
 
-// LENGTH
-int phase_length(char *, char);
-int phase_llength(char **, char *);
-int phase_nlength(int);
-int phase_count(char *, char, char);
-int phase_bounce(char *, char, char, char);
+    // MANIPULATION
+    char *phase_set(char *, char);
+    char **phase_sset(char *, char *, char);
+    char *phase_append(char *, char *, char);
+    char *phase_insert(char *, char, char);
+    char *phase_reverse(char *, char);
+    char **phase_split(char *, char, char, char *);
+    char *phase_hyper(char *, char **, char);
+    char *phase_purge(char *, char, char);
 
-// ALLOCATION
-char *phase_malloc(int, char);
-char **phase_mmalloc(int, char *);
-int *phase_malloi(int, int);
+    // LENGTH
+    size_t phase_length(char *, char);
+    size_t phase_llength(char **, char *);
+    size_t phase_nlength(size_t);
+    size_t phase_count(char *, char, char);
+    size_t phase_bounce(char *, char, char, char);
 
-// FREE
-int phase_ffree(char **, char *);
+    // ALLOCATION
+    char *phase_malloc(size_t, char);
+    char **phase_mmalloc(size_t, char *);
+    size_t *phase_malloi(size_t, size_t);
 
-// CONVERT
-int phase_atoi(char *, char);
-char *phase_itoa(int, char);
-char *phase_ctoa(char, char);
+    // FREE
+    size_t phase_ffree(char **, char *);
 
-// CALCUL
-int phase_range(int, int);
+    // CONVERT
+    int phase_atoi(char *, char);
+    char *phase_itoa(size_t, char);
+    char *phase_ctoa(char, char);
+
+    // CALCUL
+    size_t phase_range(size_t, size_t);
+
+#endif /* phaseout */

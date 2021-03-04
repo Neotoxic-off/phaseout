@@ -8,11 +8,11 @@
 #include "PHASEOUT.h"
 
 
-int phase_ffree(char **array, char *last)
+size_t phase_ffree(char **array, char *last)
 {
-    int number_of_free = phase_llength(array, last);
+    size_t number_of_free = phase_llength(array, last);
 
-    for (int i = 0; i < number_of_free; i++)
+    for (size_t i = 0; i < number_of_free; i++)
         free(array[i]);
     free(array);
 

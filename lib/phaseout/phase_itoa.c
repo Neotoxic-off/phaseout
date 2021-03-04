@@ -7,9 +7,9 @@
 
 #include "PHASEOUT.h"
 
-char *phase_itoa(int number, char c)
+char *phase_itoa(size_t number, char c)
 {
-    int len = phase_nlength(number);
+    size_t len = phase_nlength(number);
     char *str = phase_malloc(sizeof(char) * (len), c);
 
     while (len--) {

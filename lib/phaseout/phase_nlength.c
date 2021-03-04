@@ -7,9 +7,9 @@
 
 #include "PHASEOUT.h"
 
-int phase_nlength(int num)
+size_t phase_nlength(size_t num)
 {
-    int i = 0;
+    size_t i = 0;
 
     for (; num > 0; i++)
         num = num / 10;

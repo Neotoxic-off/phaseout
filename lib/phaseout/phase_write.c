@@ -7,7 +7,7 @@
 
 #include "PHASEOUT.h"
 
-int phase_write(char *str, char end)
+ssize_t phase_write(char *str, char end)
 {
     return (write(1, str, phase_length(str, end)));
 }

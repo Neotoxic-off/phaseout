@@ -7,7 +7,10 @@
 
 #include "PHASEOUT.h"
 
-int phase_writechar(char c)
+ssize_t phase_writechar(char c)
 {
-    return (write(1, &c, 1));
+    int fd = 1;
+    size_t size = 1;
+
+    return (write(fd, &c, size));
 }

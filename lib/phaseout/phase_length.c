@@ -7,9 +7,9 @@
 
 #include "PHASEOUT.h"
 
-int phase_length(char *str, char c)
+size_t phase_length(char *str, char c)
 {
-    int i = 0;
+    size_t i = 0;
 
     for (; str[i] != c; i++);
 

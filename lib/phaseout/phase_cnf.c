@@ -7,7 +7,7 @@
 
 #include "PHASEOUT.h"
 
-int phase_cnf(char *str)
+size_t phase_cnf(char *str)
 {
     if (str) {
         free(str);

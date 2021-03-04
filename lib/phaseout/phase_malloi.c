@@ -7,12 +7,12 @@
 
 #include "PHASEOUT.h"
 
-int *phase_malloi(int size, int c)
+size_t *phase_malloi(size_t size, size_t c)
 {
-    int *target = NULL;
+    size_t *target = NULL;
 
-    if ((target = malloc(sizeof(int) * (size + 1))) == 0) {
-        for (int i = 0; i <= size; i++)
+    if ((target = malloc(sizeof(size_t) * (size + 1))) == 0) {
+        for (size_t i = 0; i <= size; i++)
             target[i] = c;
         return (target);
     } else

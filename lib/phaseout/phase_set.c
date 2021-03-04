@@ -9,10 +9,10 @@
 
 char *phase_set(char *add, char end)
 {
-    int add_length = phase_length(add, end);
+    size_t add_length = phase_length(add, end);
     char *array = phase_malloc(add_length, end);
 
-    for (int i = 0; i < add_length; i++) {
+    for (size_t i = 0; i < add_length; i++) {
         array[i] = add[i];
     }
 

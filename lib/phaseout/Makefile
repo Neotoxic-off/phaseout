@@ -5,18 +5,22 @@
 ## Makefile
 ##
 
-OBJS	=	$(patsubst %.c, %.o, $(wildcard ./*.c))
+OBJS	=	$(patsubst %.c, %.o, $(shell find . -type f -name "*.c"))
 
-HFILE	=	../../include/PHASEOUT.h
-HFILE	+=	../../include/STATUS.h
+HFILE	=	$(wildcard $(INCLUDE)/*.h)
+
+INCLUDE	=	include
 
 NAME 	=	phaseout.a
 
-CFLAGS	=	-I ../../include
-CFLAGS	+=	-g3
-CFLAGS	+=	-Wall -Wextra -O3 -fno-builtin
+INC_FLAG	=	-I ../../$(INCLUDE)
 
-CC		=	@gcc
+OBJ_FLAG	=	-g3
+OBJ_FLAG	+=	-Weverything
+OBJ_FLAG	+=	-Wno-gnu
+OBJ_FLAG	+=	-march=native
+
+CC		=	@clang
 AR		=	@ar rc
 RM		=	@rm -f
 
@@ -29,16 +33,15 @@ $(OBJS): $(HFILE)
 
 clean:
 	@$(RM) $(OBJS)
-	@echo "\e[32m[ DONE ]\033[0m Cleanned"
+	@echo "\e[32m[ DONE ]\033[0m  Cleanned *.o"
 
-fclean:
-	@$(RM) $(OBJS)
-	@rm -f $(NAME)
-	@echo "\e[32m[ DONE ] \033[0m Cleanned"
+fclean: clean
+	@$(RM) $(NAME)
+	@echo "\e[32m[ DONE ]\033[0m  Cleanned $(NAME)"
 
 re:	fclean all
 
 .c.o:	%.c
-	@$(CC) -c $< -o $@ $(CFLAGS) && echo "\e[32m[ DONE ] \033[0m" $< || echo "\e[91;5m[ FAIL ] \e[25m" $< "\033[0m"
+	@$(CC) -c $< -o $@ $(OBJ_FLAG) $(INC_FLAG) && echo "\e[32m[ DONE ] \033[0m" $< || echo "\e[91;5m[ FAIL ] \e[25m" $< "\033[0m"
 
 .PHONY: all clean fclean re

@@ -7,11 +7,12 @@
 
 #include "PHASEOUT.h"
 
-char **phase_mmalloc(int size, char *end)
+char **phase_mmalloc(size_t size, char *end)
 {
-    char **array = malloc(sizeof(char *) * (size + 1));
+    size_t total_size = sizeof(char *) * (size + 1);
+    char **array = malloc(total_size);
 
-    for (int i = 0; i <= size; i++)
+    for (size_t i = 0; i <= size; i++)
         array[i] = end;
 
     return (array);
