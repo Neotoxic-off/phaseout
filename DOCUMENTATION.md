@@ -63,6 +63,18 @@ size_t phase_prime(int <NUMBER>);
 size_t phase_cnf(char *<ARRAY>);
 ```
 
+**phase_contains**: *Check if array contains a character*
+
+```H
+size_t phase_contains(char *<ARRAY>, char <TO CHECK>, char <LAST CHARACTER>);
+```
+
+**phase_extension**: *Check if array contains an extension*
+
+```H
+size_t phase_extension(char *<ARRAY>, char *<EXTENSION>, char <LAST CHARACTER>)
+```
+
 ## MANIPULATION
 
 **phase_set**: *Allocate char\* with content*

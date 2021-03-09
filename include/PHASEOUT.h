@@ -20,7 +20,16 @@
     // CHARACTERS
     #define EMPTY '\0'
     #define LINE  '\n'
+    #define SPACE ' '
     #define TAB   '\t'
+
+    // STRINGS
+    #define S_EMPTY "\0"
+    #define S_LINE  "\n"
+    #define S_SPACE " "
+    #define S_TAB   "\t"
+    #define S_TAB_2 "  "
+    #define S_TAB_4 "    "
 
 #endif /* essential */
 
@@ -39,6 +48,8 @@
     size_t phase_endswith(char *, char *, char);
     size_t phase_prime(size_t);
     size_t phase_cnf(char *);
+    size_t phase_contains(char *, char, char);
+    size_t phase_extension(char *, char *, char);
 
     // MANIPULATION
     char *phase_set(char *, char);

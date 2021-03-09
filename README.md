@@ -4,7 +4,7 @@
 
 <p align = "center">
     <img src="https://img.shields.io/badge/Language-red?style=for-the-badge&logo=C">
-    <img src="https://img.shields.io/badge/2.0.0-purple?style=for-the-badge&logo=V">
+    <img src="https://img.shields.io/badge/2.1.0-purple?style=for-the-badge&logo=V">
     <img src="https://img.shields.io/badge/Status-in%20development-green?style=for-the-badge">
 <p/>
 
@@ -47,6 +47,8 @@ size_t phase_equals(char *, char *, char);
 size_t phase_endswith(char *, char *, char);
 size_t phase_prime(int);
 size_t phase_cnf(char *);
+size_t phase_contains(char *, char, char);
+size_t phase_extension(char *, char *, char);
 ```
 
 ## MANIPULATION
