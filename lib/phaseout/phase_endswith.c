@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2020
-** B-PSU-400-LYN-4-1-nmobjdump-paul.gardien
+** phaseout
 ** File description:
 ** phase_endwith.c
 */
