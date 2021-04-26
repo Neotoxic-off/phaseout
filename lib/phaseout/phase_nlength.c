@@ -5,7 +5,7 @@
 ** phase_nlength.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 size_t phase_nlength(size_t num)
 {

@@ -5,7 +5,7 @@
 ** phase_split.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 char **phase_split(char *array, char sep, char end, char *s_end)
 {

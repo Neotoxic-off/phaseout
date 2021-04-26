@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2020
 ** phaseout
 ** File description:
-** PHASEOUT.h
+** phaseout.h
 */
 
 #ifndef essential
@@ -50,6 +50,7 @@
     size_t phase_cnf(char *);
     size_t phase_contains(char *, char, char);
     size_t phase_extension(char *, char *, char);
+    size_t phase_startswith(char *, char *, char);
 
     // MANIPULATION
     char *phase_set(char *, char);

@@ -5,7 +5,7 @@
 ** phase_bounce.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 size_t phase_bounce(char *str, char first, char last, char end)
 {

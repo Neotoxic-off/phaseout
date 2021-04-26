@@ -5,7 +5,7 @@
 ** phase_llength.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 size_t phase_llength(char **array, char *str)
 {

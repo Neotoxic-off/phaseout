@@ -5,7 +5,7 @@
 ** phase_mmalloc.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 char **phase_mmalloc(size_t size, char *end)
 {

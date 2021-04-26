@@ -5,7 +5,7 @@
 ** phase_equals.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 size_t phase_equals(char *string, char *search, char end)
 {

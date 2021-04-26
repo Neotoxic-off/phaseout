@@ -5,7 +5,7 @@
 ** phase_purge.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 char *phase_purge(char *array, char remove, char end)
 {

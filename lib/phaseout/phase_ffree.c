@@ -5,7 +5,7 @@
 ** phase_ffree.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 
 size_t phase_ffree(char **array, char *last)

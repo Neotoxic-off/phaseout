@@ -5,7 +5,7 @@
 ** phase_endwith.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 size_t phase_endswith(char *original, char *check, char end)
 {

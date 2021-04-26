@@ -51,6 +51,12 @@ size_t phase_equals(char *<ARRAY 1>, char *<ARRAY 2>, char <LAST CHARACTER>);
 size_t phase_endswith(char *<ARRAY 1>, char *<CHECK END>, char <LAST CHARACTER>);
 ```
 
+**phase_startswith**: *Check if char \* starts with chars \**
+
+```H
+size_t phase_startswith(char *<ARRAY 1>, char *<CHECK START>, char <LAST CHARACTER>);
+```
+
 **phase_prime**: *Check if int is prime*
 
 ```H

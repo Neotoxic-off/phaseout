@@ -5,7 +5,7 @@
 ** phase_writer.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 ssize_t phase_writer(char *str, char end, char last_character)
 {

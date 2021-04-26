@@ -5,7 +5,7 @@
 ** phase_hyper.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 char *phase_hyper(char *sentence, char **content, char end)
 {

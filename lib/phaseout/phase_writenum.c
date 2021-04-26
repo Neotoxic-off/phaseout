@@ -5,7 +5,7 @@
 ** phase_writenum.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 ssize_t phase_writenum(int nb)
 {

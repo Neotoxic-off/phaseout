@@ -5,7 +5,7 @@
 ** phase_contains.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 size_t phase_contains(char *file, char c, char end)
 {

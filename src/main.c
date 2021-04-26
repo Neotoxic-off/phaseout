@@ -1,5 +1,5 @@
-#include "PHASEOUT.h"
-#include "STATUS.h"
+#include "phaseout.h"
+#include "status.h"
 
 #include "TEST.h"
 

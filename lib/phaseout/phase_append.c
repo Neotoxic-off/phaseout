@@ -5,7 +5,7 @@
 ** phase_append.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 char *phase_append(char *base, char *add, char end)
 {

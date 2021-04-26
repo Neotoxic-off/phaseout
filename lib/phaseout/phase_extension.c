@@ -5,7 +5,7 @@
 ** phase_extension.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 size_t phase_extension(char *file, char *extension, char end)
 {

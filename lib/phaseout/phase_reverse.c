@@ -5,7 +5,7 @@
 ** phase_reverse.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 char *phase_reverse(char *str, char end)
 {

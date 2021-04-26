@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2020
 ** phaseout
 ** File description:
-** STATUS.h
+** status.h
 */
 
 #ifndef https_status_codes
@@ -21,7 +21,7 @@
 #define NO_CONTENT 204
 #define RESET_CONTENT 205
 #define PARTIAL_CONTENT 206
-#define MULTI_STATUS 207
+#define MULTI_status 207
 #define ALREADY_REPORTED 208
 #define I_M_USED 226
 

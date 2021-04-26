@@ -5,7 +5,7 @@
 ** phase_sset.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 char **phase_sset(char *add, char *last, char end)
 {

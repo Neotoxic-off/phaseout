@@ -5,7 +5,7 @@
 ** phase_malloi.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 size_t *phase_malloi(size_t size, size_t c)
 {

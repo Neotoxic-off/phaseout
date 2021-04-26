@@ -5,7 +5,7 @@
 ** phase_cnf.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 size_t phase_cnf(char *str)
 {

@@ -5,7 +5,7 @@
 ** phase_atoi.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 int phase_atoi(char *str, char c)
 {

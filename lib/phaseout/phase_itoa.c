@@ -5,7 +5,7 @@
 ** phase_itoa.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 char *phase_itoa(size_t number, char c)
 {

@@ -5,7 +5,7 @@
 ** phase_prime.c
 */
 
-#include "PHASEOUT.h"
+#include "phaseout.h"
 
 size_t phase_prime(size_t nb)
 {
