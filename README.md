@@ -22,12 +22,21 @@
 // BOOLEAN
 #define True  1
 #define False 0
-#define Error -1
+#define Error 84
 
 // CHARACTERS
 #define EMPTY '\0'
 #define LINE  '\n'
+#define SPACE ' '
 #define TAB   '\t'
+
+// STRINGS
+#define S_EMPTY "\0"
+#define S_LINE  "\n"
+#define S_SPACE " "
+#define S_TAB   "\t"
+#define S_TAB_2 "  "
+#define S_TAB_4 "    "
 ```
 
 ## FUNCTIONS
